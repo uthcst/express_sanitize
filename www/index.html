@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanitization Example</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            background-color: lightgray;
+            grid-template-columns: 1fr 4fr;
+        }
+        form *{
+            padding: 3px;
+            margin: 3px;;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sanitization Example</h1>
+    <form action="/form" method="post">
+        <label for="name">Name</label>
+        <input name="name" type="text" />
+        <label for="email">Email</label>
+        <input name="email" type="text" />
+        <label for="age">Age</label>
+        <input name="age" type="text" />
+        <input type="reset" /><input type="submit" />
+    </form>
+</body>
+
+</html>
